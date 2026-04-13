@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "framework-cg"
+version = "0.1.1"
+description = "Mini framework de ETL para Postgres e Pandas."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "pandas>=2.1",
+  "numpy>=1.26",
+  "psycopg2-binary>=2.9",
+  "python-dotenv>=1.0",
+  "unidecode>=1.3",
+]
+
+[tool.setuptools.packages.find]
+include = ["framework_cg*"]
